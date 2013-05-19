@@ -46,3 +46,20 @@
 // @import "foundation/components/tooltips";
 // @import "foundation/components/dropdown";
 
+.bc-siteTitle {
+    font-size: emCalc(50px);
+}
+
+.bc-recentProducts {
+    @extend .no-bullet;
+}
+
+.bc-actionButton {
+    @include button;
+}
+
+.bc-featuredProduct {
+    .actions {
+        margin: 10px 0;
+    }
+}
