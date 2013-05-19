@@ -47,23 +47,40 @@
 // @import "foundation/components/dropdown";
 
 header {
-    margin: 10px 0;
+  // FIXME Needs a small/large combo
+  margin: 10px 0;
+}
+
+// FIXME Why was this set with a background colour to begin with?
+.contain-to-grid {
+  background-color: transparent;
 }
 
 .bc-siteTitle {
-    font-size: emCalc(50px);
+  font-size: emCalc(50px);
+  margin-bottom: emCalc(10px);
+  // Remove margin for larger than small (768px).
+  @media #{$small} {
+    margin-bottom: 0;
+  }
 }
 
 .bc-recentProducts {
-    @extend .no-bullet;
+  @extend .no-bullet;
 }
 
 .bc-actionButton {
-    @include button;
+  @include button;
+}
+
+.bc-searchButton {
+  // TODO Use mixin, Style it up.
+  @extend .button;
 }
 
 .bc-featuredProduct {
-    .actions {
-        margin: 10px 0;
-    }
+  @extend .panel;
+  .actions {
+    margin: 10px 0;
+  }
 }

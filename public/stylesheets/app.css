@@ -2478,7 +2478,7 @@ blockquote p {
   }
 }
 /* line 168, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button, .button {
+button, .button, .bc-searchButton {
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
@@ -2500,57 +2500,57 @@ button, .button {
   color: white;
 }
 /* line 121, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover, button:focus, .button:hover, .bc-searchButton:hover, .button:focus, .bc-searchButton:focus {
   background-color: #2284a1;
 }
 /* line 132, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover, button:focus, .button:hover, .bc-searchButton:hover, .button:focus, .bc-searchButton:focus {
   color: white;
 }
 /* line 173, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.secondary, .button.secondary {
+button.secondary, .button.secondary, .secondary.bc-searchButton {
   background-color: #e9e9e9;
   border-color: #d0d0d0;
   color: #333333;
 }
 /* line 121, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
+button.secondary:hover, button.secondary:focus, .button.secondary:hover, .secondary.bc-searchButton:hover, .button.secondary:focus, .secondary.bc-searchButton:focus {
   background-color: #d0d0d0;
 }
 /* line 127, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
+button.secondary:hover, button.secondary:focus, .button.secondary:hover, .secondary.bc-searchButton:hover, .button.secondary:focus, .secondary.bc-searchButton:focus {
   color: #333333;
 }
 /* line 174, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.success, .button.success {
+button.success, .button.success, .success.bc-searchButton {
   background-color: #5da423;
   border-color: #457a1a;
   color: white;
 }
 /* line 121, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
+button.success:hover, button.success:focus, .button.success:hover, .success.bc-searchButton:hover, .button.success:focus, .success.bc-searchButton:focus {
   background-color: #457a1a;
 }
 /* line 132, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
+button.success:hover, button.success:focus, .button.success:hover, .success.bc-searchButton:hover, .button.success:focus, .success.bc-searchButton:focus {
   color: white;
 }
 /* line 175, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.alert, .button.alert {
+button.alert, .button.alert, .alert.bc-searchButton {
   background-color: #c60f13;
   border-color: #970b0e;
   color: white;
 }
 /* line 121, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
+button.alert:hover, button.alert:focus, .button.alert:hover, .alert.bc-searchButton:hover, .button.alert:focus, .alert.bc-searchButton:focus {
   background-color: #970b0e;
 }
 /* line 132, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
+button.alert:hover, button.alert:focus, .button.alert:hover, .alert.bc-searchButton:hover, .button.alert:focus, .alert.bc-searchButton:focus {
   color: white;
 }
 /* line 177, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.large, .button.large {
+button.large, .button.large, .large.bc-searchButton {
   padding-top: 1em;
   padding-right: 2em;
   padding-bottom: 1.0625em;
@@ -2558,7 +2558,7 @@ button.large, .button.large {
   font-size: 1.25em;
 }
 /* line 178, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.small, .button.small {
+button.small, .button.small, .small.bc-searchButton {
   padding-top: 0.5625em;
   padding-right: 1.125em;
   padding-bottom: 0.625em;
@@ -2566,7 +2566,7 @@ button.small, .button.small {
   font-size: 0.8125em;
 }
 /* line 179, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.tiny, .button.tiny {
+button.tiny, .button.tiny, .tiny.bc-searchButton {
   padding-top: 0.4375em;
   padding-right: 0.875em;
   padding-bottom: 0.5em;
@@ -2574,23 +2574,23 @@ button.tiny, .button.tiny {
   font-size: 0.6875em;
 }
 /* line 180, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.expand, .button.expand {
+button.expand, .button.expand, .expand.bc-searchButton {
   padding-right: 0px;
   padding-left: 0px;
   width: 100%;
 }
 /* line 182, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.left-align, .button.left-align {
+button.left-align, .button.left-align, .left-align.bc-searchButton {
   text-align: left;
   text-indent: 0.75em;
 }
 /* line 183, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.right-align, .button.right-align {
+button.right-align, .button.right-align, .right-align.bc-searchButton {
   text-align: right;
   padding-right: 0.75em;
 }
 /* line 185, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.disabled, button[disabled], .button.disabled, .button[disabled] {
+button.disabled, button[disabled], .button.disabled, .disabled.bc-searchButton, .button[disabled], [disabled].bc-searchButton {
   background-color: #2ba6cb;
   border-color: #2284a1;
   color: white;
@@ -2600,19 +2600,19 @@ button.disabled, button[disabled], .button.disabled, .button[disabled] {
   box-shadow: none;
 }
 /* line 121, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
+button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .disabled.bc-searchButton:hover, .button.disabled:focus, .disabled.bc-searchButton:focus, .button[disabled]:hover, [disabled].bc-searchButton:hover, .button[disabled]:focus, [disabled].bc-searchButton:focus {
   background-color: #2284a1;
 }
 /* line 132, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
+button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .disabled.bc-searchButton:hover, .button.disabled:focus, .disabled.bc-searchButton:focus, .button[disabled]:hover, [disabled].bc-searchButton:hover, .button[disabled]:focus, [disabled].bc-searchButton:focus {
   color: white;
 }
 /* line 143, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
+button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .disabled.bc-searchButton:hover, .button.disabled:focus, .disabled.bc-searchButton:focus, .button[disabled]:hover, [disabled].bc-searchButton:hover, .button[disabled]:focus, [disabled].bc-searchButton:focus {
   background-color: #2ba6cb;
 }
 /* line 186, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
+button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .disabled.secondary.bc-searchButton, .button[disabled].secondary, [disabled].secondary.bc-searchButton {
   background-color: #e9e9e9;
   border-color: #d0d0d0;
   color: #333333;
@@ -2622,19 +2622,19 @@ button.disabled.secondary, button[disabled].secondary, .button.disabled.secondar
   box-shadow: none;
 }
 /* line 121, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
+button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .disabled.secondary.bc-searchButton:hover, .button.disabled.secondary:focus, .disabled.secondary.bc-searchButton:focus, .button[disabled].secondary:hover, [disabled].secondary.bc-searchButton:hover, .button[disabled].secondary:focus, [disabled].secondary.bc-searchButton:focus {
   background-color: #d0d0d0;
 }
 /* line 127, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
+button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .disabled.secondary.bc-searchButton:hover, .button.disabled.secondary:focus, .disabled.secondary.bc-searchButton:focus, .button[disabled].secondary:hover, [disabled].secondary.bc-searchButton:hover, .button[disabled].secondary:focus, [disabled].secondary.bc-searchButton:focus {
   color: #333333;
 }
 /* line 143, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
+button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .disabled.secondary.bc-searchButton:hover, .button.disabled.secondary:focus, .disabled.secondary.bc-searchButton:focus, .button[disabled].secondary:hover, [disabled].secondary.bc-searchButton:hover, .button[disabled].secondary:focus, [disabled].secondary.bc-searchButton:focus {
   background-color: #e9e9e9;
 }
 /* line 187, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.disabled.success, button[disabled].success, .button.disabled.success, .button[disabled].success {
+button.disabled.success, button[disabled].success, .button.disabled.success, .disabled.success.bc-searchButton, .button[disabled].success, [disabled].success.bc-searchButton {
   background-color: #5da423;
   border-color: #457a1a;
   color: white;
@@ -2644,19 +2644,19 @@ button.disabled.success, button[disabled].success, .button.disabled.success, .bu
   box-shadow: none;
 }
 /* line 121, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
+button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .disabled.success.bc-searchButton:hover, .button.disabled.success:focus, .disabled.success.bc-searchButton:focus, .button[disabled].success:hover, [disabled].success.bc-searchButton:hover, .button[disabled].success:focus, [disabled].success.bc-searchButton:focus {
   background-color: #457a1a;
 }
 /* line 132, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
+button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .disabled.success.bc-searchButton:hover, .button.disabled.success:focus, .disabled.success.bc-searchButton:focus, .button[disabled].success:hover, [disabled].success.bc-searchButton:hover, .button[disabled].success:focus, [disabled].success.bc-searchButton:focus {
   color: white;
 }
 /* line 143, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
+button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .disabled.success.bc-searchButton:hover, .button.disabled.success:focus, .disabled.success.bc-searchButton:focus, .button[disabled].success:hover, [disabled].success.bc-searchButton:hover, .button[disabled].success:focus, [disabled].success.bc-searchButton:focus {
   background-color: #5da423;
 }
 /* line 188, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.disabled.alert, button[disabled].alert, .button.disabled.alert, .button[disabled].alert {
+button.disabled.alert, button[disabled].alert, .button.disabled.alert, .disabled.alert.bc-searchButton, .button[disabled].alert, [disabled].alert.bc-searchButton {
   background-color: #c60f13;
   border-color: #970b0e;
   color: white;
@@ -2666,42 +2666,42 @@ button.disabled.alert, button[disabled].alert, .button.disabled.alert, .button[d
   box-shadow: none;
 }
 /* line 121, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
+button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .disabled.alert.bc-searchButton:hover, .button.disabled.alert:focus, .disabled.alert.bc-searchButton:focus, .button[disabled].alert:hover, [disabled].alert.bc-searchButton:hover, .button[disabled].alert:focus, [disabled].alert.bc-searchButton:focus {
   background-color: #970b0e;
 }
 /* line 132, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
+button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .disabled.alert.bc-searchButton:hover, .button.disabled.alert:focus, .disabled.alert.bc-searchButton:focus, .button[disabled].alert:hover, [disabled].alert.bc-searchButton:hover, .button[disabled].alert:focus, [disabled].alert.bc-searchButton:focus {
   color: white;
 }
 /* line 143, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
+button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .disabled.alert.bc-searchButton:hover, .button.disabled.alert:focus, .disabled.alert.bc-searchButton:focus, .button[disabled].alert:hover, [disabled].alert.bc-searchButton:hover, .button[disabled].alert:focus, [disabled].alert.bc-searchButton:focus {
   background-color: #c60f13;
 }
 
 /* line 193, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button, .button {
+button, .button, .bc-searchButton {
   padding-top: 0.8125em;
   padding-bottom: 0.75em;
 }
 /* line 195, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.tiny, .button.tiny {
+button.tiny, .button.tiny, .tiny.bc-searchButton {
   padding-top: 0.5em;
   padding-bottom: 0.4375em;
 }
 /* line 196, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.small, .button.small {
+button.small, .button.small, .small.bc-searchButton {
   padding-top: 0.625em;
   padding-bottom: 0.5625em;
 }
 /* line 197, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-button.large, .button.large {
+button.large, .button.large, .large.bc-searchButton {
   padding-top: 1.03125em;
   padding-bottom: 1.03125em;
 }
 
 @media only screen {
   /* line 203, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-  button, .button {
+  button, .button, .bc-searchButton {
     -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     -webkit-transition: background-color 300ms ease-out;
@@ -2709,24 +2709,24 @@ button.large, .button.large {
     transition: background-color 300ms ease-out;
   }
   /* line 54, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_global.scss */
-  button:active, .button:active {
+  button:active, .button:active, .bc-searchButton:active {
     -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
   }
   /* line 211, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-  button.radius, .button.radius {
+  button.radius, .button.radius, .radius.bc-searchButton {
     -webkit-border-radius: 3px;
     border-radius: 3px;
   }
   /* line 212, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-  button.round, .button.round {
+  button.round, .button.round, .round.bc-searchButton {
     -webkit-border-radius: 1000px;
     border-radius: 1000px;
   }
 }
 @media only screen and (min-width: 48em) {
   /* line 220, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_buttons.scss */
-  button, .button {
+  button, .button, .bc-searchButton {
     display: inline-block;
   }
 }
@@ -2805,7 +2805,7 @@ label.inline {
 
 /* Adjust padding, alignment and radius if pre/post element is a button */
 /* line 272, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_forms.scss */
-.postfix.button {
+.postfix.button, .postfix.bc-searchButton {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
@@ -2815,7 +2815,7 @@ label.inline {
 }
 
 /* line 273, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_forms.scss */
-.prefix.button {
+.prefix.button, .prefix.bc-searchButton {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
@@ -2825,7 +2825,7 @@ label.inline {
 }
 
 /* line 275, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_forms.scss */
-.prefix.button.radius {
+.prefix.button.radius, .prefix.radius.bc-searchButton {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-bottomleft: 3px;
@@ -2837,7 +2837,7 @@ label.inline {
 }
 
 /* line 276, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_forms.scss */
-.postfix.button.radius {
+.postfix.button.radius, .postfix.radius.bc-searchButton {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-topright: 3px;
@@ -2849,7 +2849,7 @@ label.inline {
 }
 
 /* line 277, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_forms.scss */
-.prefix.button.round {
+.prefix.button.round, .prefix.round.bc-searchButton {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-bottomleft: 1000px;
@@ -2861,7 +2861,7 @@ label.inline {
 }
 
 /* line 278, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_forms.scss */
-.postfix.button.round {
+.postfix.button.round, .postfix.round.bc-searchButton {
   -webkit-border-radius: 0;
   border-radius: 0;
   -moz-border-radius-topright: 1000px;
@@ -3382,7 +3382,7 @@ form.custom .custom.disabled {
   margin-left: 0;
 }
 /* line 53, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_button-groups.scss */
-.button-group.radius > *:first-child, .button-group.radius > *:first-child > a, .button-group.radius > *:first-child > button, .button-group.radius > *:first-child > .button {
+.button-group.radius > *:first-child, .button-group.radius > *:first-child > a, .button-group.radius > *:first-child > button, .button-group.radius > *:first-child > .button, .button-group.radius > *:first-child > .bc-searchButton {
   -moz-border-radius-bottomleft: 3px;
   -moz-border-radius-topleft: 3px;
   -webkit-border-bottom-left-radius: 3px;
@@ -3391,7 +3391,7 @@ form.custom .custom.disabled {
   border-top-left-radius: 3px;
 }
 /* line 57, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_button-groups.scss */
-.button-group.radius > *:last-child, .button-group.radius > *:last-child > a, .button-group.radius > *:last-child > button, .button-group.radius > *:last-child > .button {
+.button-group.radius > *:last-child, .button-group.radius > *:last-child > a, .button-group.radius > *:last-child > button, .button-group.radius > *:last-child > .button, .button-group.radius > *:last-child > .bc-searchButton {
   -moz-border-radius-topright: 3px;
   -moz-border-radius-bottomright: 3px;
   -webkit-border-top-right-radius: 3px;
@@ -3400,7 +3400,7 @@ form.custom .custom.disabled {
   border-bottom-right-radius: 3px;
 }
 /* line 53, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_button-groups.scss */
-.button-group.round > *:first-child, .button-group.round > *:first-child > a, .button-group.round > *:first-child > button, .button-group.round > *:first-child > .button {
+.button-group.round > *:first-child, .button-group.round > *:first-child > a, .button-group.round > *:first-child > button, .button-group.round > *:first-child > .button, .button-group.round > *:first-child > .bc-searchButton {
   -moz-border-radius-bottomleft: 1000px;
   -moz-border-radius-topleft: 1000px;
   -webkit-border-bottom-left-radius: 1000px;
@@ -3409,7 +3409,7 @@ form.custom .custom.disabled {
   border-top-left-radius: 1000px;
 }
 /* line 57, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_button-groups.scss */
-.button-group.round > *:last-child, .button-group.round > *:last-child > a, .button-group.round > *:last-child > button, .button-group.round > *:last-child > .button {
+.button-group.round > *:last-child, .button-group.round > *:last-child > a, .button-group.round > *:last-child > button, .button-group.round > *:last-child > .button, .button-group.round > *:last-child > .bc-searchButton {
   -moz-border-radius-topright: 1000px;
   -moz-border-radius-bottomright: 1000px;
   -webkit-border-top-right-radius: 1000px;
@@ -3422,7 +3422,7 @@ form.custom .custom.disabled {
   width: 50%;
 }
 /* line 63, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_button-groups.scss */
-.button-group.even-2 li button, .button-group.even-2 li .button {
+.button-group.even-2 li button, .button-group.even-2 li .button, .button-group.even-2 li .bc-searchButton {
   width: 100%;
 }
 /* line 80, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_button-groups.scss */
@@ -3430,7 +3430,7 @@ form.custom .custom.disabled {
   width: 33.33333%;
 }
 /* line 63, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_button-groups.scss */
-.button-group.even-3 li button, .button-group.even-3 li .button {
+.button-group.even-3 li button, .button-group.even-3 li .button, .button-group.even-3 li .bc-searchButton {
   width: 100%;
 }
 /* line 80, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_button-groups.scss */
@@ -3438,7 +3438,7 @@ form.custom .custom.disabled {
   width: 25%;
 }
 /* line 63, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_button-groups.scss */
-.button-group.even-4 li button, .button-group.even-4 li .button {
+.button-group.even-4 li button, .button-group.even-4 li .button, .button-group.even-4 li .bc-searchButton {
   width: 100%;
 }
 /* line 80, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_button-groups.scss */
@@ -3446,7 +3446,7 @@ form.custom .custom.disabled {
   width: 20%;
 }
 /* line 63, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_button-groups.scss */
-.button-group.even-5 li button, .button-group.even-5 li .button {
+.button-group.even-5 li button, .button-group.even-5 li .button, .button-group.even-5 li .bc-searchButton {
   width: 100%;
 }
 /* line 80, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_button-groups.scss */
@@ -3454,7 +3454,7 @@ form.custom .custom.disabled {
   width: 16.66667%;
 }
 /* line 63, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_button-groups.scss */
-.button-group.even-6 li button, .button-group.even-6 li .button {
+.button-group.even-6 li button, .button-group.even-6 li .button, .button-group.even-6 li .bc-searchButton {
   width: 100%;
 }
 /* line 80, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_button-groups.scss */
@@ -3462,7 +3462,7 @@ form.custom .custom.disabled {
   width: 14.28571%;
 }
 /* line 63, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_button-groups.scss */
-.button-group.even-7 li button, .button-group.even-7 li .button {
+.button-group.even-7 li button, .button-group.even-7 li .button, .button-group.even-7 li .bc-searchButton {
   width: 100%;
 }
 /* line 80, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_button-groups.scss */
@@ -3470,7 +3470,7 @@ form.custom .custom.disabled {
   width: 12.5%;
 }
 /* line 63, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_button-groups.scss */
-.button-group.even-8 li button, .button-group.even-8 li .button {
+.button-group.even-8 li button, .button-group.even-8 li .button, .button-group.even-8 li .bc-searchButton {
   width: 100%;
 }
 
@@ -3499,12 +3499,12 @@ form.custom .custom.disabled {
 
 /* Dropdown Button */
 /* line 108, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button {
+.dropdown.button, .dropdown.bc-searchButton {
   position: relative;
   padding-right: 3.1875em;
 }
 /* line 46, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button:before {
+.dropdown.button:before, .dropdown.bc-searchButton:before {
   position: absolute;
   content: "";
   width: 0;
@@ -3515,70 +3515,70 @@ form.custom .custom.disabled {
   top: 50%;
 }
 /* line 81, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button:before {
+.dropdown.button:before, .dropdown.bc-searchButton:before {
   border-width: 0.5625em;
   right: 1.5em;
   margin-top: -0.25em;
 }
 /* line 100, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button:before {
+.dropdown.button:before, .dropdown.bc-searchButton:before {
   border-color: white transparent transparent transparent;
 }
 /* line 109, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.tiny {
+.dropdown.button.tiny, .dropdown.tiny.bc-searchButton {
   padding-right: 2.1875em;
 }
 /* line 61, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.tiny:before {
+.dropdown.button.tiny:before, .dropdown.tiny.bc-searchButton:before {
   border-width: 0.4375em;
   right: 0.875em;
   margin-top: -0.15625em;
 }
 /* line 100, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.tiny:before {
+.dropdown.button.tiny:before, .dropdown.tiny.bc-searchButton:before {
   border-color: white transparent transparent transparent;
 }
 /* line 110, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.small {
+.dropdown.button.small, .dropdown.small.bc-searchButton {
   padding-right: 2.8125em;
 }
 /* line 71, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.small:before {
+.dropdown.button.small:before, .dropdown.small.bc-searchButton:before {
   border-width: 0.5625em;
   right: 1.125em;
   margin-top: -0.21875em;
 }
 /* line 100, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.small:before {
+.dropdown.button.small:before, .dropdown.small.bc-searchButton:before {
   border-color: white transparent transparent transparent;
 }
 /* line 111, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.large {
+.dropdown.button.large, .dropdown.large.bc-searchButton {
   padding-right: 4em;
 }
 /* line 91, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.large:before {
+.dropdown.button.large:before, .dropdown.large.bc-searchButton:before {
   border-width: 0.625em;
   right: 1.75em;
   margin-top: -0.3125em;
 }
 /* line 100, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.large:before {
+.dropdown.button.large:before, .dropdown.large.bc-searchButton:before {
   border-color: white transparent transparent transparent;
 }
 /* line 112, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_dropdown-buttons.scss */
-.dropdown.button.secondary:before {
+.dropdown.button.secondary:before, .dropdown.secondary.bc-searchButton:before {
   border-color: #333333 transparent transparent transparent;
 }
 
 /* Split Buttons */
 /* line 150, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button {
+.split.button, .split.bc-searchButton {
   position: relative;
   padding-right: 4.8em;
 }
 /* line 53, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button span {
+.split.button span, .split.bc-searchButton span {
   display: block;
   height: 100%;
   position: absolute;
@@ -3587,7 +3587,7 @@ form.custom .custom.disabled {
   border-left: solid 1px;
 }
 /* line 62, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button span:before {
+.split.button span:before, .split.bc-searchButton span:before {
   position: absolute;
   content: "";
   width: 0;
@@ -3597,99 +3597,99 @@ form.custom .custom.disabled {
   left: 50%;
 }
 /* line 73, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button span:active {
+.split.button span:active, .split.bc-searchButton span:active {
   background-color: rgba(0, 0, 0, 0.1);
 }
 /* line 79, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button span {
+.split.button span, .split.bc-searchButton span {
   border-left-color: #1e728c;
 }
 /* line 116, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button span {
+.split.button span, .split.bc-searchButton span {
   width: 3em;
 }
 /* line 117, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button span:before {
+.split.button span:before, .split.bc-searchButton span:before {
   border-top-style: solid;
   border-width: 0.5625em;
   top: 1.125em;
   margin-left: -0.5625em;
 }
 /* line 142, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button span:before {
+.split.button span:before, .split.bc-searchButton span:before {
   border-color: white transparent transparent transparent;
 }
 /* line 79, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button.secondary span {
+.split.button.secondary span, .split.secondary.bc-searchButton span {
   border-left-color: #c3c3c3;
 }
 /* line 142, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button.secondary span:before {
+.split.button.secondary span:before, .split.secondary.bc-searchButton span:before {
   border-color: white transparent transparent transparent;
 }
 /* line 79, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button.alert span {
+.split.button.alert span, .split.alert.bc-searchButton span {
   border-left-color: #7f0a0c;
 }
 /* line 79, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button.success span {
+.split.button.success span, .split.success.bc-searchButton span {
   border-left-color: #396516;
 }
 /* line 156, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button.tiny {
+.split.button.tiny, .split.tiny.bc-searchButton {
   padding-right: 3.9375em;
 }
 /* line 88, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button.tiny span {
+.split.button.tiny span, .split.tiny.bc-searchButton span {
   width: 2.84375em;
 }
 /* line 89, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button.tiny span:before {
+.split.button.tiny span:before, .split.tiny.bc-searchButton span:before {
   border-top-style: solid;
   border-width: 0.4375em;
   top: 0.875em;
   margin-left: -0.3125em;
 }
 /* line 157, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button.small {
+.split.button.small, .split.small.bc-searchButton {
   padding-right: 3.9375em;
 }
 /* line 102, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button.small span {
+.split.button.small span, .split.small.bc-searchButton span {
   width: 2.8125em;
 }
 /* line 103, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button.small span:before {
+.split.button.small span:before, .split.small.bc-searchButton span:before {
   border-top-style: solid;
   border-width: 0.5625em;
   top: 0.84375em;
   margin-left: -0.5625em;
 }
 /* line 158, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button.large {
+.split.button.large, .split.large.bc-searchButton {
   padding-right: 6em;
 }
 /* line 130, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button.large span {
+.split.button.large span, .split.large.bc-searchButton span {
   width: 3.75em;
 }
 /* line 131, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button.large span:before {
+.split.button.large span:before, .split.large.bc-searchButton span:before {
   border-top-style: solid;
   border-width: 0.625em;
   top: 1.3125em;
   margin-left: -0.5625em;
 }
 /* line 159, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button.expand {
+.split.button.expand, .split.expand.bc-searchButton {
   padding-left: 2em;
 }
 /* line 142, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button.secondary span:before {
+.split.button.secondary span:before, .split.secondary.bc-searchButton span:before {
   border-color: #333333 transparent transparent transparent;
 }
 /* line 163, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button.radius span {
+.split.button.radius span, .split.radius.bc-searchButton span {
   -moz-border-radius-topright: 3px;
   -moz-border-radius-bottomright: 3px;
   -webkit-border-top-right-radius: 3px;
@@ -3698,7 +3698,7 @@ form.custom .custom.disabled {
   border-bottom-right-radius: 3px;
 }
 /* line 164, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_split-buttons.scss */
-.split.button.round span {
+.split.button.round span, .split.round.bc-searchButton span {
   -moz-border-radius-topright: 1000px;
   -moz-border-radius-bottomright: 1000px;
   -webkit-border-top-right-radius: 1000px;
@@ -4330,7 +4330,7 @@ form.custom .custom.disabled {
   height: 2.45em;
 }
 /* line 86, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_top-bar.scss */
-.top-bar .button {
+.top-bar .button, .top-bar .bc-searchButton {
   padding-top: .5em;
   padding-bottom: .5em;
   margin-bottom: 0;
@@ -4465,36 +4465,36 @@ form.custom .custom.disabled {
   background: #2b2b2b;
 }
 /* line 226, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button {
+.top-bar-section ul li > a.button, .top-bar-section ul li > a.bc-searchButton {
   background: #2ba6cb;
   font-size: 0.8125em;
 }
 /* line 229, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button:hover {
+.top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.bc-searchButton:hover {
   background: #2284a1;
 }
 /* line 233, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button.secondary {
+.top-bar-section ul li > a.button.secondary, .top-bar-section ul li > a.secondary.bc-searchButton {
   background: #e9e9e9;
 }
 /* line 235, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button.secondary:hover {
+.top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > a.secondary.bc-searchButton:hover {
   background: #d0d0d0;
 }
 /* line 239, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button.success {
+.top-bar-section ul li > a.button.success, .top-bar-section ul li > a.success.bc-searchButton {
   background: #5da423;
 }
 /* line 241, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button.success:hover {
+.top-bar-section ul li > a.button.success:hover, .top-bar-section ul li > a.success.bc-searchButton:hover {
   background: #457a1a;
 }
 /* line 245, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button.alert {
+.top-bar-section ul li > a.button.alert, .top-bar-section ul li > a.alert.bc-searchButton {
   background: #c60f13;
 }
 /* line 247, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button.alert:hover {
+.top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > a.alert.bc-searchButton:hover {
   background: #970b0e;
 }
 /* line 255, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_top-bar.scss */
@@ -4610,7 +4610,8 @@ form.custom .custom.disabled {
   }
   /* line 334, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_top-bar.scss */
   .top-bar input,
-  .top-bar .button {
+  .top-bar .button,
+  .top-bar .bc-searchButton {
     line-height: 2em;
     font-size: 0.875em;
     height: 2em;
@@ -5075,7 +5076,7 @@ form.custom .custom.disabled {
   padding: 1.125em 1.25em 1.5em;
 }
 /* line 68, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_joyride.scss */
-.joyride-content-wrapper .button {
+.joyride-content-wrapper .button, .joyride-content-wrapper .bc-searchButton {
   margin-bottom: 0 !important;
 }
 
@@ -5735,7 +5736,7 @@ kbd {
 
 /* Panels */
 /* line 63, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_panels.scss */
-.panel {
+.panel, .bc-featuredProduct {
   border-style: solid;
   border-width: 1px;
   border-color: #d9d9d9;
@@ -5744,28 +5745,28 @@ kbd {
   background: #f2f2f2;
 }
 /* line 44, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_panels.scss */
-.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p {
+.panel h1, .bc-featuredProduct h1, .panel h2, .bc-featuredProduct h2, .panel h3, .bc-featuredProduct h3, .panel h4, .bc-featuredProduct h4, .panel h5, .bc-featuredProduct h5, .panel h6, .bc-featuredProduct h6, .panel p, .bc-featuredProduct p {
   color: #333333;
 }
 /* line 48, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_panels.scss */
-.panel > :first-child {
+.panel > :first-child, .bc-featuredProduct > :first-child {
   margin-top: 0;
 }
 /* line 49, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_panels.scss */
-.panel > :last-child {
+.panel > :last-child, .bc-featuredProduct > :last-child {
   margin-bottom: 0;
 }
 /* line 52, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_panels.scss */
-.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6 {
+.panel h1, .bc-featuredProduct h1, .panel h2, .bc-featuredProduct h2, .panel h3, .bc-featuredProduct h3, .panel h4, .bc-featuredProduct h4, .panel h5, .bc-featuredProduct h5, .panel h6, .bc-featuredProduct h6 {
   line-height: 1;
   margin-bottom: 0.625em;
 }
 /* line 54, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_panels.scss */
-.panel h1.subheader, .panel h2.subheader, .panel h3.subheader, .panel h4.subheader, .panel h5.subheader, .panel h6.subheader {
+.panel h1.subheader, .bc-featuredProduct h1.subheader, .panel h2.subheader, .bc-featuredProduct h2.subheader, .panel h3.subheader, .bc-featuredProduct h3.subheader, .panel h4.subheader, .bc-featuredProduct h4.subheader, .panel h5.subheader, .bc-featuredProduct h5.subheader, .panel h6.subheader, .bc-featuredProduct h6.subheader {
   line-height: 1.4;
 }
 /* line 65, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_panels.scss */
-.panel.callout {
+.panel.callout, .callout.bc-featuredProduct {
   border-style: solid;
   border-width: 1px;
   border-color: #2284a1;
@@ -5776,28 +5777,28 @@ kbd {
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 /* line 45, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_panels.scss */
-.panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6, .panel.callout p {
+.panel.callout h1, .callout.bc-featuredProduct h1, .panel.callout h2, .callout.bc-featuredProduct h2, .panel.callout h3, .callout.bc-featuredProduct h3, .panel.callout h4, .callout.bc-featuredProduct h4, .panel.callout h5, .callout.bc-featuredProduct h5, .panel.callout h6, .callout.bc-featuredProduct h6, .panel.callout p, .callout.bc-featuredProduct p {
   color: white;
 }
 /* line 48, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_panels.scss */
-.panel.callout > :first-child {
+.panel.callout > :first-child, .callout.bc-featuredProduct > :first-child {
   margin-top: 0;
 }
 /* line 49, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_panels.scss */
-.panel.callout > :last-child {
+.panel.callout > :last-child, .callout.bc-featuredProduct > :last-child {
   margin-bottom: 0;
 }
 /* line 52, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_panels.scss */
-.panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6 {
+.panel.callout h1, .callout.bc-featuredProduct h1, .panel.callout h2, .callout.bc-featuredProduct h2, .panel.callout h3, .callout.bc-featuredProduct h3, .panel.callout h4, .callout.bc-featuredProduct h4, .panel.callout h5, .callout.bc-featuredProduct h5, .panel.callout h6, .callout.bc-featuredProduct h6 {
   line-height: 1;
   margin-bottom: 0.625em;
 }
 /* line 54, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_panels.scss */
-.panel.callout h1.subheader, .panel.callout h2.subheader, .panel.callout h3.subheader, .panel.callout h4.subheader, .panel.callout h5.subheader, .panel.callout h6.subheader {
+.panel.callout h1.subheader, .callout.bc-featuredProduct h1.subheader, .panel.callout h2.subheader, .callout.bc-featuredProduct h2.subheader, .panel.callout h3.subheader, .callout.bc-featuredProduct h3.subheader, .panel.callout h4.subheader, .callout.bc-featuredProduct h4.subheader, .panel.callout h5.subheader, .callout.bc-featuredProduct h5.subheader, .panel.callout h6.subheader, .callout.bc-featuredProduct h6.subheader {
   line-height: 1.4;
 }
 /* line 70, ../../../../../../../var/lib/gems/1.9.1/gems/zurb-foundation-4.1.6/scss/foundation/components/_panels.scss */
-.panel.radius {
+.panel.radius, .radius.bc-featuredProduct {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
@@ -6532,12 +6533,24 @@ header {
   margin: 10px 0;
 }
 
-/* line 53, ../../sass/app.scss */
-.bc-siteTitle {
-  font-size: 3.125em;
+/* line 55, ../../sass/app.scss */
+.contain-to-grid {
+  background-color: transparent;
 }
 
-/* line 61, ../../sass/app.scss */
+/* line 59, ../../sass/app.scss */
+.bc-siteTitle {
+  font-size: 3.125em;
+  margin-bottom: 0.625em;
+}
+@media only screen and (min-width: 48em) {
+  /* line 59, ../../sass/app.scss */
+  .bc-siteTitle {
+    margin-bottom: 0;
+  }
+}
+
+/* line 72, ../../sass/app.scss */
 .bc-actionButton {
   border-style: solid;
   border-width: 1px;
@@ -6568,7 +6581,7 @@ header {
   color: white;
 }
 
-/* line 66, ../../sass/app.scss */
+/* line 83, ../../sass/app.scss */
 .bc-featuredProduct .actions {
   margin: 10px 0;
 }
