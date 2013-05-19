@@ -48,7 +48,7 @@
 
 header {
   // FIXME Needs a small/large combo
-  margin: 10px 0;
+  margin: emCalc(10px) 0;
 }
 
 // FIXME Why was this set with a background colour to begin with?
@@ -80,6 +80,7 @@ header {
 
 .bc-featuredProduct {
   @extend .panel;
+  background-color: $secondary-color;
   .actions {
     margin: 10px 0;
   }
