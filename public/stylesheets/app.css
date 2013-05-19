@@ -6528,11 +6528,16 @@ a.th {
 }
 
 /* line 49, ../../sass/app.scss */
+header {
+  margin: 10px 0;
+}
+
+/* line 53, ../../sass/app.scss */
 .bc-siteTitle {
   font-size: 3.125em;
 }
 
-/* line 57, ../../sass/app.scss */
+/* line 61, ../../sass/app.scss */
 .bc-actionButton {
   border-style: solid;
   border-width: 1px;
@@ -6563,7 +6568,7 @@ a.th {
   color: white;
 }
 
-/* line 62, ../../sass/app.scss */
+/* line 66, ../../sass/app.scss */
 .bc-featuredProduct .actions {
   margin: 10px 0;
 }
