@@ -1,0 +1,31 @@
+{
+    "_comments": [
+        "Manifests file for bcass. Initially for JS concat/minifcation."
+    ],
+
+    "js": {
+        "jquery": [
+            "public/javascripts/vendor/jquery.js"
+        ],
+        "zepto": [
+            "public/javascripts/vendor/zepto.js"
+        ],
+        "foundation": [
+            "public/javascripts/foundation/foundation.js",
+            "public/javascripts/foundation/foundation.topbar.js",
+            "public/javascripts/foundation/foundation.magellan.js",
+            "public/javascripts/foundation/foundation.clearing.js",
+            "public/javascripts/foundation/foundation.dropdown.js",
+            "public/javascripts/foundation/foundation.orbit.js",
+            "public/javascripts/foundation/foundation.joyride.js",
+            "public/javascripts/foundation/foundation.cookie.js",
+            "public/javascripts/foundation/foundation.reveal.js",
+            "public/javascripts/foundation/foundation.forms.js",
+            "public/javascripts/foundation/foundation.section.js",
+            "public/javascripts/foundation/foundation.alerts.js",
+            "public/javascripts/foundation/foundation.placeholder.js",
+            "public/javascripts/foundation/foundation.tooltips.js"
+        ]
+    }
+
+}

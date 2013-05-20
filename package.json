@@ -15,6 +15,9 @@
 		"express": "3.x",
 		"nodemon": "*",
 		"consolidate": "*",
-		"qejs": "*"
+		"qejs": "*",
+		"grunt" : "0.4.x",
+        "grunt-contrib-uglify": "*",
+        "grunt-contrib-watch": "*"
 	}
 }

@@ -1,3 +1,14 @@
+# Files/folders to exclude from git.
+
+# Compass scss cache dir
 .sass-cache
+
+# Intellij files/dirs
 .idea
 *.iml
+
+# Exclude compiled JS from source control
+compiled/
+
+# Exclude NPM packages from source control
+node_modules
