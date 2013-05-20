@@ -8,7 +8,42 @@ module.exports = function (grunt) {
     // Load our config json
     var manifests = grunt.file.readJSON('conf/manifests.json');
 
+    // Load additional tasks
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+
+    // App grunt config
     grunt.initConfig({
+
+        // Later, we'll add Jasmine and app JS files.
+        // @see http://www.jshint.com/docs/
+        jshint: {
+            all: {
+                src: [ './Gruntfile.js' ],
+                options: {
+                    bitwise: true,
+                    camelcase: true,
+                    curly: true,
+                    eqeqeq: true,
+                    forin: true,
+                    immed: true,
+                    indent: 4,
+                    latedef: true,
+                    newcap: true,
+                    noarg: true,
+                    noempty: true,
+                    nonew: true,
+                    quotmark: 'single',
+                    regexp: true,
+                    undef: true,
+                    unused: true,
+                    trailing: true,
+                    maxlen: 120
+                },
+                ignores: []
+            }
+        },
 
         // JS minification
         uglify: {
@@ -44,14 +79,8 @@ module.exports = function (grunt) {
 
     });
 
-
-    // Load additional tasks
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-
     // Define task aliases
-    grunt.registerTask('dev', ['uglify:dev', 'watch']);
-    grunt.registerTask('prod', ['uglify:prod']);
-
+    grunt.registerTask('dev', ['jshint', 'uglify:dev', 'watch']);
+    grunt.registerTask('prod', ['jshint', 'uglify:prod']);
 
 }
