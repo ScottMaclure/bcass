@@ -1,3 +1,5 @@
 .sass-cache
 .idea
 *.iml
+compiled/
+node_modules
