@@ -6,10 +6,16 @@
 
 ## Later
 
-* Setup grunt to compile / compress / minify etc
-* Write some custom JS (perhaps an ajax search)
+* Write some custom JS (perhaps an ajax search?)
+* Extend grunt with jshint
+* Extend grunt with compass, remove dependency on zurb-foundation gem
 
 ## Done 
+
+### 2013-05-21
+
+* Setup gruntfile, create compiled JS, hook into base.html
+* Update README.md
 
 ### 2013-05-19
 

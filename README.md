@@ -1,4 +1,6 @@
-# Big Commerce - Senior FE Assignment
+# BC - Senior FE Assignment
+
+The following project is my submission for the BC FE assignment.
 
 ## Assignment
 
