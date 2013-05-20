@@ -2,7 +2,7 @@
 
 The following project is my submission for the BC FE assignment.
 
-See [bcass/blob/master/docs/todo.md] for a todo list.
+See (docs/todo.md) for a todo list.
 
 ## Assignment
 
