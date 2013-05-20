@@ -51,6 +51,7 @@ module.exports = function (grunt) {
 
     // Define task aliases
     grunt.registerTask('dev', ['uglify:dev', 'watch']);
+    grunt.registerTask('prod', ['uglify:prod']);
 
 
 }
