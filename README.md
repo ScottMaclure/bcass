@@ -16,17 +16,30 @@ Browser support: IE7+, latest Firefox, Chrome and Safari
 
 ## Core Tech
 
-* Foundation v4: this allows me to get up and running very quickly with a grid and some decent css, rather than hand-crafting everything from scratch.
+* Foundation v4: this allows me to get up and running very quickly with a grid and some decent css, rather than hand-crafting everything from scratch. A few JS modules that come in handy as well. I'd customise this later.
+* Node.js, Express: Server-side tech for rendering. Basic server-app, to be replaced later for real.
 * Git + Bitbucket: The VCS of choice, coupled with Bitbucket for a (free) private repo.
 
 ## Other choices and notes
 
 * Compass: What Foundation uses for compiling its SCSS.
-* Zepto, with jQuery fallback for IE. Since conditional comments are not supported in IE10, we use document.write instead. This is a Foundation4 decision.
+* Zepto, with jQuery fallback for IE. Since conditional comments are not supported in IE10, we use document.write instead. This is a Foundation4 decision. Still need to research this in terms of IE7 support for Foundation v4.
 
 ## Installation
 
+Setup the project via `git clone`.
+
+### Ruby Gems
+
+```
+[sudo] gem install sass compass zurb-foundation
+```
+
+Note: May remove this dependency later.
+
 ### Apache vhost
+
+If you want to run it through port 80, use apache as a reverse-proxy:
 
 ```
 <VirtualHost *:80>
@@ -43,9 +56,13 @@ Browser support: IE7+, latest Firefox, Chrome and Safari
 </VirtualHost>
 ```
 
-### Building the project
+Don't forget to add an entry to `/etc/hosts`.
 
-To compile sass:
+## Building the project
+
+### Building SASS
+
+Until this is in the gruntfile, to compile sass:
 
 `compass compile`
 
@@ -53,6 +70,22 @@ To run the background:
 
 `compass watch`
 
-### Running
+### Grunt
+
+To build compiled scripts and finish in "watch" mode:
+
+`grunt dev`
+
+To minify/compress:
+
+`grunt prod`
+
+## Fire it up!
+
+Directly through node:
+
+http://localhost:3000/
+
+Or through apache:
 
 http://bcass.local/
