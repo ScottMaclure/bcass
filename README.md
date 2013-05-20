@@ -2,6 +2,8 @@
 
 The following project is my submission for the BC FE assignment.
 
+See [bcass/blob/master/docs/todo.md] for a todo list.
+
 ## Assignment
 
 Your challenge is to replicate the attached screenshots of the homepage of a mocked store front
