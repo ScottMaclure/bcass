@@ -3,6 +3,8 @@
 ## Sooner
 
 * Grab some images for the product data
+* Render/style RHS bar to look like the jpg
+* IE7 testing and support strategy (need to get VM XP serial/activation first)
 
 ## Later
 
