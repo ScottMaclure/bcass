@@ -18,6 +18,8 @@
 * Model layer for things like products? Generating image elements?
 * Review/address issue with Uglify and Zepto (1.2.6 lock?)
 * Replace navbar with data structure
+* Image magnifier plugin?
+* Touch-friendly carousel?
 
 ## Done
 
