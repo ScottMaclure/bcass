@@ -1,0 +1,19 @@
+<div class="bc-featuredProduct">
+    <div class="row">
+        <div class="large-4 columns imgLarge">
+            <img src="<%= featuredProduct.imgLarge %>">
+        </div>
+        <div class="large-8 columns">
+            <div class="title">
+                <%= featuredProduct.title %>
+            </div>
+            <div class="description">
+                <%- featuredProduct.description %>
+            </div>
+            <div class="bc-currency">&dollar;<%- utils.formatCurrency(featuredProduct.price) %></div>
+            <div class="actions">
+                <a href="/addToCart?id=<%= featuredProduct.id %>" class="button small round">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</div>

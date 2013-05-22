@@ -1,0 +1,14 @@
+<%
+// Using small grid so it looks the same on mobile.
+%>
+<div class="bc-recentProduct">
+    <div class="row display">
+        <div class="small-4 columns">
+            <img src="<%= product.imgThumb %>">
+        </div>
+        <div class="small-8 columns">
+            <div class="title"><%= product.title %></div>
+            <div class="price"><span class="bc-currency">&dollar;<%- utils.formatCurrency(product.price) %></span></div>
+        </div>
+    </div>
+</div>
