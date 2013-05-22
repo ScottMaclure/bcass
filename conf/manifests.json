@@ -4,12 +4,6 @@
     ],
 
     "js": {
-        "jquery": [
-            "public/javascripts/vendor/jquery.js"
-        ],
-        "zepto": [
-            "public/javascripts/vendor/zepto.js"
-        ],
         "foundation": [
             "public/javascripts/foundation/foundation.js",
             "public/javascripts/foundation/foundation.topbar.js",

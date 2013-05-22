@@ -47,6 +47,7 @@ module.exports = function (grunt) {
         },
 
         // JS minification
+        // FIXME uglify apperas to fail for zepto?
         uglify: {
             dev: {
                 options: {
@@ -56,15 +57,11 @@ module.exports = function (grunt) {
                     beautify: true
                 },
                 files: {
-                    'public/javascripts/compiled/jquery.min.js': manifests.js.jquery,
-                    'public/javascripts/compiled/zepto.min.js': manifests.js.zepto,
                     'public/javascripts/compiled/foundation.min.js': manifests.js.foundation
                 }
             },
             prod: {
                 files: {
-                    'public/javascripts/compiled/jquery.min.js': manifests.js.jquery,
-                    'public/javascripts/compiled/zepto.min.js': manifests.js.zepto,
                     'public/javascripts/compiled/foundation.min.js': manifests.js.foundation
                 }
             }
@@ -97,7 +94,7 @@ module.exports = function (grunt) {
         // Watch filesystem for changes and run relevant tasks.
         watch: {
             uglify: {
-                files: [].concat(manifests.js.jquery, manifests.js.zepto, manifests.js.foundation),
+                files: manifests.js.foundation,
                 tasks: [ 'uglify:dev' ]
             },
 			compass: {
