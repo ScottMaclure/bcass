@@ -12,6 +12,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-compass');
 
     // App grunt config
     grunt.initConfig({
@@ -20,7 +21,7 @@ module.exports = function (grunt) {
         // @see http://www.jshint.com/docs/
         jshint: {
             all: {
-                src: [ './Gruntfile.js' ],
+                src: [ 'Gruntfile.js' ],
                 options: {
                     bitwise: true,
                     camelcase: true,
@@ -69,18 +70,46 @@ module.exports = function (grunt) {
             }
         },
 
-        // Watch filesystem for changes and run relevant tasks
+		// SASS generation using Compass. Gives us tools like sprite generation.
+		compass: {
+			options: {
+				sassDir: 'sass',
+				cssDir: 'public/stylesheets',
+				imagesDir: 'public/images',
+				// For correct sprite css generation (for later)
+				raw: 'http_images_path = \'/images\' \nhttp_generated_images_path = \'/images\'',
+				require: [ 'zurb-foundation' ]
+			},
+			dev: {
+				 options: {
+					outputStyle: 'expanded'
+				 }
+			},
+			prod: {
+				options: {
+					force: true,
+					outputStyle: 'compressed',
+					noLineComments: true
+				}
+			}
+		},
+
+        // Watch filesystem for changes and run relevant tasks.
         watch: {
             uglify: {
                 files: [].concat(manifests.js.jquery, manifests.js.zepto, manifests.js.foundation),
                 tasks: [ 'uglify:dev' ]
-            }
+            },
+			compass: {
+				files: 'sass/**/*.scss',
+				tasks: [ 'compass:dev' ]
+			}
         }
 
     });
 
     // Define task aliases
-    grunt.registerTask('dev', ['jshint', 'uglify:dev', 'watch']);
-    grunt.registerTask('prod', ['jshint', 'uglify:prod']);
+    grunt.registerTask('dev', ['jshint', 'uglify:dev', 'compass:dev', 'watch']);
+    grunt.registerTask('deploy', ['jshint', 'uglify:prod', 'compass:prod']);
 
 }

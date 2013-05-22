@@ -4,18 +4,24 @@
 
 * Grab some images for the product data
 * Render/style RHS bar to look like the jpg
-* IE7 testing and support strategy (need to get VM XP serial/activation first)
+* Refactor app scss into file/folder structure (sass-globbing?)
+* Write some custom JS (perhaps an ajax search?)
 
 ## Later
 
-* Write some custom JS (perhaps an ajax search?)
-* Extend grunt with jshint
-* Extend grunt with compass, remove dependency on zurb-foundation gem
+* IE7 testing and support strategy (need to get VM XP serial/activation first)
+* Consider: remove dependency on zurb-foundation gem, add foundation sass directly to project (consider upgrade path though. Temptation to tweak foundation itself?)
+* Consider: sass-globbing: So you can do @import "library/**/*"
 
-## Done 
+## Done
+
+### 2013-05-22
+
+* Extend grunt with compass (dev: 248k, prod: 97k).
 
 ### 2013-05-21
 
+* Extend grunt with jshint
 * Setup gruntfile, create compiled JS, hook into base.html
 * Update README.md
 

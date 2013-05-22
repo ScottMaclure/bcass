@@ -23,6 +23,7 @@ Browser support: IE7+, latest Firefox, Chrome and Safari
 * Foundation v4: this allows me to get up and running very quickly with a grid and some decent css, rather than hand-crafting everything from scratch. A few JS modules that come in handy as well. I'd customise this later.
 * Node.js, Express: Server-side tech for rendering. Basic server-app, to be replaced later for real.
 * Git + Bitbucket: The VCS of choice, coupled with Bitbucket for a (free) private repo.
+* Grunt: For automating tasks like minification etc. Very useful swiss-army knife. Moar Node!
 
 ## Other choices and notes
 
@@ -36,10 +37,10 @@ Setup the project via `git clone`.
 ### Ruby Gems
 
 ```
-[sudo] gem install sass compass zurb-foundation
+[sudo] gem install sass compass zurb-foundation sass-globbing
 ```
 
-Note: May remove this dependency later.
+Note: May remove some of these dependencies later.
 
 ### Apache vhost
 
@@ -62,25 +63,13 @@ If you want to run it through port 80, use apache as a reverse-proxy:
 
 Don't forget to add an entry to `/etc/hosts`.
 
-## Building the project
+## Grunt
 
-### Building SASS
-
-Until this is in the gruntfile, to compile sass:
-
-`compass compile`
-
-To run the background:
-
-`compass watch`
-
-### Grunt
-
-To build compiled scripts and finish in "watch" mode:
+To build css and js, and finish in "watch" mode:
 
 `grunt dev`
 
-To minify/compress:
+To minify/compress for production:
 
 `grunt prod`
 

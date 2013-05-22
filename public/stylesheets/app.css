@@ -6528,29 +6528,29 @@ a.th {
   max-width: 800px;
 }
 
-/* line 49, ../../sass/app.scss */
+/* line 12, ../../sass/app.scss */
 header {
   margin: 0.625em 0;
 }
 
-/* line 55, ../../sass/app.scss */
+/* line 18, ../../sass/app.scss */
 .contain-to-grid {
   background-color: transparent;
 }
 
-/* line 59, ../../sass/app.scss */
+/* line 22, ../../sass/app.scss */
 .bc-siteTitle {
   font-size: 3.125em;
   margin-bottom: 0.625em;
 }
 @media only screen and (min-width: 48em) {
-  /* line 59, ../../sass/app.scss */
+  /* line 22, ../../sass/app.scss */
   .bc-siteTitle {
     margin-bottom: 0;
   }
 }
 
-/* line 72, ../../sass/app.scss */
+/* line 35, ../../sass/app.scss */
 .bc-actionButton {
   border-style: solid;
   border-width: 1px;
@@ -6581,11 +6581,11 @@ header {
   color: white;
 }
 
-/* line 81, ../../sass/app.scss */
+/* line 44, ../../sass/app.scss */
 .bc-featuredProduct {
   background-color: #ffe8d6;
 }
-/* line 84, ../../sass/app.scss */
+/* line 47, ../../sass/app.scss */
 .bc-featuredProduct .actions {
   margin: 10px 0;
 }
