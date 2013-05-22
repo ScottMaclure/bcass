@@ -54,6 +54,8 @@ $secondary-color: #ffe8d6;
 
 // $global-radius: 3px;
 // $global-rounded: 1000px;
+$global-radius: emCalc(10px);
+$global-rounded: emCalc(10px);
 
 // Inset shadow shiny edges and depressions.
 
@@ -106,6 +108,7 @@ $secondary-color: #ffe8d6;
 
 // $row-width: emCalc(1000px);
 // $column-gutter: emCalc(30px);
+$column-gutter: emCalc(10px);
 // $total-columns: 12;
 
 //
@@ -191,6 +194,7 @@ $secondary-color: #ffe8d6;
 // Lists
 
 // $list-style-position: outside;
+$list-style-position: inside;
 // $list-side-margin: emCalc(18px);
 // $definition-list-header-weight: bold;
 // $definition-list-header-margin-bottom: .3em;
@@ -335,6 +339,7 @@ $secondary-color: #ffe8d6;
 // Radius used throughout the core.
 
 // $button-radius: $global-radius;
+$button-radius: emCalc(5px);
 
 // Opacity for disabled buttons.
 

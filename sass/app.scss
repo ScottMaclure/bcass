@@ -28,12 +28,14 @@ header {
   }
 }
 
-.bc-recentProducts {
-  @extend .no-bullet;
+// standard currency/price/money display
+.bc-currency {
+  font-style: italic;
+  color: $subheader-font-color;
 }
 
 .bc-actionButton {
-  @include button;
+  // TODO
 }
 
 .bc-searchButton {
@@ -42,9 +44,41 @@ header {
 }
 
 .bc-featuredProduct {
+
   @extend .panel;
+
   background-color: $secondary-color;
-  .actions {
-    margin: 10px 0;
+  border: 0;
+  padding: 0;
+
+  .imgLarge {
+    text-align: center;
+    margin: emCalc(10px);
+    img {
+      border: 1px solid $primary-color;
+    }
+    // Desktop
+    // TODO Mixing to make this more semantic?
+    @media #{$small} {
+      margin: 0;
+    }
   }
+
+  .title {
+    margin: emCalc(10px) 0;
+    font-weight: bold;
+  }
+
+  .bc-currency {
+    font-weight: bold;
+  }
+
+  .actions {
+    margin: emCalc(10px) 0 0 0;
+  }
+
+}
+
+.bc-recentProduct {
+  margin-bottom: emCalc(10px);
 }
