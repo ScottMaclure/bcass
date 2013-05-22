@@ -2,13 +2,13 @@
 
 ## Sooner
 
-* 404 page handled by express
-* Constants for things like image sizes, rather than hard-coding into views
 * Refactor app scss into file/folder structure (sass-globbing?)
-* Write some custom JS (perhaps an ajax search?)
+* Setup Jasmine spec runner for app .js
+* Write some custom JS (perhaps an ajax search?). Design via md doc.
 
 ## Later
 
+* Fix deprecated use of end (use done) - see node.js server log
 * Implement a "stars" rating display. Sprite?
 * IE7 testing and support strategy (need to get VM XP serial/activation first)
 * Consider: remove dependency on zurb-foundation gem, add foundation sass directly to project (consider upgrade path though. Temptation to tweak foundation itself?)
@@ -16,7 +16,8 @@
 * HTML utility library for links etc
 * Image service? Generating image tags?
 * Model layer for things like products? Generating image elements?
-* Implement a 404 handler (Oops! page)
+* Review/address issue with Uglify and Zepto (1.2.6 lock?)
+* Replace navbar with data structure
 
 ## Done
 
@@ -26,6 +27,7 @@
 * Grab some images for the product data.
 * Move featured product html into partials, hook up to images.
 * Render/style RHS bar to look more like the jpg
+* Implement a 404 handler (Oops! page)
 
 ### 2013-05-21
 

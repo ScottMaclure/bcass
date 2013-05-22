@@ -19,3 +19,12 @@ exports.index = function (req, res) {
 		recentProducts: productService.getRecentProducts(3)
 	});
 };
+
+/**
+ * Error 404 handler
+ * @param req
+ * @param res
+ */
+exports.notFound = function (req, res) {
+	res.render('errors/404.html');
+}

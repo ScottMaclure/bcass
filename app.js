@@ -20,11 +20,11 @@ app.configure(function () {
 	app.set('view engine', 'qejs');
 	app.set('views', __dirname + '/views');
 
-	// Hook router up to middleware
-	app.use(app.router);
-
 	// Serve requests for assets from public sub-folder of project.
 	app.use('/', express.static(path.join(__dirname, 'public')));
+
+	// Hook router up to app to serve requests
+	app.use(app.router);
 });
 
 // Nice errors during development
@@ -39,6 +39,9 @@ app.enable('trust proxy');
 // TODO Dynamic route binding would be nice.
 var routes = require('./routes');
 app.get('/', routes.index);
+
+// Final route is 404
+app.get('*', routes.notFound);
 
 // Bind to port 3000
 http.createServer(app).listen(app.get('port'), function(){
