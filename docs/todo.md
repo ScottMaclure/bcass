@@ -2,7 +2,7 @@
 
 ## Sooner
 
-* Render/style RHS bar to look like the jpg
+* 404 page handled by express
 * Constants for things like image sizes, rather than hard-coding into views
 * Refactor app scss into file/folder structure (sass-globbing?)
 * Write some custom JS (perhaps an ajax search?)
@@ -25,6 +25,7 @@
 * Extend grunt with compass (dev: 248k, prod: 97k).
 * Grab some images for the product data.
 * Move featured product html into partials, hook up to images.
+* Render/style RHS bar to look more like the jpg
 
 ### 2013-05-21
 
