@@ -1,4 +1,5 @@
-// Search module, up the top-right
+// Search module, up the top-right.
+// Tweaked for desktop vs mobile.
 
 .m-search {
   position: relative;
@@ -8,22 +9,35 @@
 
   @include panel;
 
-  // By default, hide results from display.
-  @include slideDownStart;
+  // Mobile: Hide.
+  display: none;
+
+  // Mobile
+  top: 0;
 
   // Position absolutely for desktop.
   @include desktop {
+
     position: absolute;
-    top: 30px; // FIXME mobile
+
+    // For deskop, opacity takes care of this.
+    // By default, hide results from display.
+    @include slideDownStart;
+    display: block;
+
+    top: 30px; // Overrides above mobile decl
     width: 100%;
     margin: 0;
+
     // FIXME Urgh. Some kind of layering?
     z-index: 999;
+
   }
 
   // State class at module level.
   .is-searchResultsAvailable & {
     @include slideDownFinish;
+    display: block;
   }
 
 }

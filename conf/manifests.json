@@ -4,6 +4,9 @@
     ],
 
     "js": {
+		"jasmineVendor": [
+			"public/javascripts/vendor/jquery.js"
+		],
         "foundation": [
             "public/javascripts/foundation/foundation.js",
             "public/javascripts/foundation/foundation.topbar.js",
@@ -19,7 +22,13 @@
             "public/javascripts/foundation/foundation.alerts.js",
             "public/javascripts/foundation/foundation.placeholder.js",
             "public/javascripts/foundation/foundation.tooltips.js"
-        ]
+        ],
+		"app": [
+			"public/javascripts/app/search.js"
+		],
+		"specs": [
+			"public/javascripts/tests/specs/*Spec.js"
+		]
     }
 
 }

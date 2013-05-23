@@ -13,6 +13,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-compass');
+	grunt.loadNpmTasks('grunt-contrib-connect');
+	grunt.loadNpmTasks('grunt-contrib-jasmine');
 
     // App grunt config
     grunt.initConfig({
@@ -91,6 +93,29 @@ module.exports = function (grunt) {
 			}
 		},
 
+		// HTTP server
+		connect: {
+			jasmine: {
+				options: {
+					hostname: 'localhost',
+					// It's over nine-thousand!!!
+					port: 9001
+				}
+			}
+		},
+
+		// BDD suite
+		jasmine: {
+			all : {
+				src: manifests.js.app,
+				options: {
+					vendor: manifests.js.jasmineVendor,
+					specs: manifests.js.specs,
+					host: 'http://localhost:9001/'
+				}
+			}
+		},
+
         // Watch filesystem for changes and run relevant tasks.
         watch: {
             uglify: {
@@ -107,6 +132,7 @@ module.exports = function (grunt) {
 
     // Define task aliases
     grunt.registerTask('dev', ['jshint', 'uglify:dev', 'compass:dev', 'watch']);
+	grunt.registerTask('test', ['jshint', 'connect', 'jasmine']);
     grunt.registerTask('deploy', ['jshint', 'uglify:prod', 'compass:prod']);
 
 }
