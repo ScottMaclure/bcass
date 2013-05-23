@@ -1,13 +1,15 @@
-# BCASS Todo
+# BCASS TO DO
 
 ## Sooner
 
 * Setup Jasmine spec runner for app .js
-* Write some custom JS (perhaps an ajax search?). Design via md doc.
+* Add Sinon to the grunt task for mocking XHR
+* Write some custom JS (perhaps an ajax search?). Design via Jasmine suite
 * Update package.json dependencies to use specific versions, to prevent updates breaking deployment
 
 ## Later
 
+* JS code coverage report with istanbul
 * IE7 testing and support strategy (need to get VM XP serial/activation first)
 * Implement a "stars" rating display. Sprite?
 * Model layer for things like products? Generating image elements?
