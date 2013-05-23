@@ -1,0 +1,21 @@
+<div class="m-search">
+
+    <div class="row collapse">
+        <div class="small-10 columns">
+            <input name="search" type="text" placeholder="Search...">
+        </div>
+        <div class="small-2 columns">
+            <a href="#" class="bc-searchButton prefix">Go</a>
+        </div>
+    </div>
+
+    <div class="m-searchResults">
+        <ul class="no-bullet">
+            <% for (i = 1; i <= 5; i++) { %>
+                <li>result <%= i %></li>
+            <% } %>
+        </ul>
+        <div><a href="/search/more/34834">View more</a></div>
+    </div>
+
+</div>

@@ -1,0 +1,21 @@
+// Search module, up the top-right
+
+.m-search {
+  position: relative;
+}
+
+.m-searchResults {
+
+  @include panel;
+
+  // Position absolutely for desktop.
+  @include desktop {
+    position: absolute;
+    top: 30px; // FIXME mobile
+    width: 100%;
+    margin: 0;
+    // FIXME Urgh. Some kind of layering?
+    z-index: 999;
+  }
+
+}
