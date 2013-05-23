@@ -1,0 +1,10 @@
+// Adapted for foundation
+// @see http://foundation.zurb.com/docs/media-queries.html
+
+@mixin desktop {
+
+  @media #{$small} {
+    @content;
+  }
+
+}

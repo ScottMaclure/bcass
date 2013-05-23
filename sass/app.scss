@@ -4,81 +4,11 @@
 // Comment out this import if you don't want to use normalize
 @import "normalize";
 
-// Load entirety of foundation. Can import individual files. See docs.
+// Load entirety of foundation.
+// Can import individual files for a smaller footprint. See docs.
 @import "foundation";
 
-// TODO Split up app scss into folder/file hierarchy. Use with sass-globbing.
-
-header {
-  // FIXME Needs a small/large combo
-  margin: emCalc(10px) 0;
-}
-
-// FIXME Why was this set with a background colour to begin with?
-.contain-to-grid {
-  background-color: transparent;
-}
-
-.bc-siteTitle {
-  font-size: emCalc(50px);
-  margin-bottom: emCalc(10px);
-  // Remove margin for larger than small (768px).
-  @media #{$small} {
-    margin-bottom: 0;
-  }
-}
-
-// standard currency/price/money display
-.bc-currency {
-  font-style: italic;
-  color: $subheader-font-color;
-}
-
-.bc-actionButton {
-  // TODO
-}
-
-.bc-searchButton {
-  // TODO Use mixin, Style it up.
-  @extend .button;
-}
-
-.bc-featuredProduct {
-
-  @extend .panel;
-
-  background-color: $secondary-color;
-  border: 0;
-  padding: 0;
-
-  .imgLarge {
-    text-align: center;
-    margin: emCalc(10px);
-    img {
-      border: 1px solid $primary-color;
-    }
-    // Desktop
-    // TODO Mixing to make this more semantic?
-    @media #{$small} {
-      margin: 0;
-    }
-  }
-
-  .title {
-    margin: emCalc(10px) 0;
-    font-weight: bold;
-  }
-
-  .bc-currency {
-    font-weight: bold;
-  }
-
-  .actions {
-    margin: emCalc(10px) 0 0 0;
-  }
-
-}
-
-.bc-recentProduct {
-  margin-bottom: emCalc(10px);
-}
+// Thanks to sass-globbing, our imports are simple. Mixins, base, then modules.
+@import "app/mixins/**/*";
+@import "app/base/**/*";
+@import "app/modules/**/*";

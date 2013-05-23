@@ -1,0 +1,11 @@
+// Layout-centric styles
+
+header {
+  // FIXME Needs a small/large combo
+  margin: emCalc(10px) 0;
+}
+
+// FIXME Why was this set with a background colour to begin with?
+.contain-to-grid {
+  background-color: transparent;
+}

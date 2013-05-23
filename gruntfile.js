@@ -75,7 +75,7 @@ module.exports = function (grunt) {
 				imagesDir: 'public/images',
 				// For correct sprite css generation (for later)
 				raw: 'http_images_path = \'/images\' \nhttp_generated_images_path = \'/images\'',
-				require: [ 'zurb-foundation' ]
+				require: [ 'zurb-foundation', 'sass-globbing' ]
 			},
 			dev: {
 				 options: {
