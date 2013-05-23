@@ -1,0 +1,11 @@
+@mixin slideDownStart {
+  opacity: 0;
+}
+
+@mixin slideDownFinish {
+  opacity: 1;
+  -webkit-transition: opacity .125s ease-in;
+  transition: opacity .125s ease-in;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
