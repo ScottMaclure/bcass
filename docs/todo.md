@@ -2,26 +2,30 @@
 
 ## Sooner
 
-* Refactor app scss into file/folder structure (sass-globbing?)
 * Setup Jasmine spec runner for app .js
 * Write some custom JS (perhaps an ajax search?). Design via md doc.
+* Update package.json dependencies to use specific versions, to prevent updates breaking deployment
 
 ## Later
 
-* Fix deprecated use of end (use done) - see node.js server log
-* Implement a "stars" rating display. Sprite?
 * IE7 testing and support strategy (need to get VM XP serial/activation first)
+* Implement a "stars" rating display. Sprite?
+* Model layer for things like products? Generating image elements?
 * Consider: remove dependency on zurb-foundation gem, add foundation sass directly to project (consider upgrade path though. Temptation to tweak foundation itself?)
-* Consider: sass-globbing: So you can do @import "library/**/*"
 * HTML utility library for links etc
 * Image service? Generating image tags?
-* Model layer for things like products? Generating image elements?
 * Review/address issue with Uglify and Zepto (1.2.6 lock?)
 * Replace navbar with data structure
 * Image magnifier plugin?
 * Touch-friendly carousel?
+* Fix deprecated use of end (use done) - see node.js server log
 
 ## Done
+
+### 2013-05-23
+
+* Refactor app scss into file/folder structure (sass-globbing?)
+* Added sass-globbing: So you can do @import "library/**/*"
 
 ### 2013-05-22
 
