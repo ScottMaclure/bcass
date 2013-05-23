@@ -1,0 +1,17 @@
+// Typographical styles
+
+// standard currency/price/money display
+.bc-currency {
+  font-style: italic;
+  color: $subheader-font-color;
+}
+
+// Main site title
+.bc-siteTitle {
+  font-size: emCalc(50px);
+  margin-bottom: emCalc(10px);
+  // Remove margin for desktop
+  @include desktop {
+    margin-bottom: 0;
+  }
+}

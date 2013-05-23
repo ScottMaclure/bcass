@@ -1,0 +1,43 @@
+// Product-related styles
+
+// Main featured product
+.bc-featuredProduct {
+
+  @extend .panel;
+
+  background-color: $secondary-color;
+  border: 0;
+  padding: 0;
+
+  // TODO Split out into a stand-alone class. Less nesting.
+  .imgLarge {
+    text-align: center;
+    margin: emCalc(10px);
+    img {
+      border: 1px solid $primary-color;
+    }
+    // Desktop
+    @include desktop {
+      margin: 0;
+    }
+  }
+
+  .title {
+    margin: emCalc(10px) 0;
+    font-weight: bold;
+  }
+
+  .bc-currency {
+    font-weight: bold;
+  }
+
+  .actions {
+    margin: emCalc(10px) 0 0 0;
+  }
+
+}
+
+// RHS nav product info
+.bc-recentProduct {
+  margin-bottom: emCalc(10px);
+}

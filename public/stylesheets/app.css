@@ -6528,70 +6528,70 @@ a.th {
   max-width: 800px;
 }
 
-/* line 12, ../../sass/app.scss */
+/* line 3, ../../sass/app/base/_layouts.scss */
 header {
   margin: 0.625em 0;
 }
 
-/* line 18, ../../sass/app.scss */
+/* line 9, ../../sass/app/base/_layouts.scss */
 .contain-to-grid {
   background-color: transparent;
 }
 
-/* line 22, ../../sass/app.scss */
-.bc-siteTitle {
-  font-size: 3.125em;
-  margin-bottom: 0.625em;
-}
-@media only screen and (min-width: 48em) {
-  /* line 22, ../../sass/app.scss */
-  .bc-siteTitle {
-    margin-bottom: 0;
-  }
-}
-
-/* line 32, ../../sass/app.scss */
+/* line 4, ../../sass/app/base/_typography.scss */
 .bc-currency {
   font-style: italic;
   color: #6f6f6f;
 }
 
-/* line 46, ../../sass/app.scss */
+/* line 10, ../../sass/app/base/_typography.scss */
+.bc-siteTitle {
+  font-size: 3.125em;
+  margin-bottom: 0.625em;
+}
+@media only screen and (min-width: 48em) {
+  /* line 10, ../../sass/app/base/_typography.scss */
+  .bc-siteTitle {
+    margin-bottom: 0;
+  }
+}
+
+/* line 4, ../../sass/app/modules/_products.scss */
 .bc-featuredProduct {
   background-color: #ffe8d6;
   border: 0;
   padding: 0;
 }
-/* line 54, ../../sass/app.scss */
+/* line 13, ../../sass/app/modules/_products.scss */
 .bc-featuredProduct .imgLarge {
   text-align: center;
   margin: 0.625em;
 }
-/* line 57, ../../sass/app.scss */
+/* line 16, ../../sass/app/modules/_products.scss */
 .bc-featuredProduct .imgLarge img {
   border: 1px solid #f06c00;
 }
 @media only screen and (min-width: 48em) {
-  /* line 54, ../../sass/app.scss */
+  /* line 13, ../../sass/app/modules/_products.scss */
   .bc-featuredProduct .imgLarge {
     margin: 0;
   }
 }
-/* line 67, ../../sass/app.scss */
+/* line 25, ../../sass/app/modules/_products.scss */
 .bc-featuredProduct .title {
   margin: 0.625em 0;
   font-weight: bold;
 }
-/* line 72, ../../sass/app.scss */
+/* line 30, ../../sass/app/modules/_products.scss */
 .bc-featuredProduct .bc-currency {
   font-weight: bold;
 }
-/* line 76, ../../sass/app.scss */
+/* line 34, ../../sass/app/modules/_products.scss */
 .bc-featuredProduct .actions {
   margin: 0.625em 0 0 0;
 }
 
-/* line 82, ../../sass/app.scss */
+/* line 41, ../../sass/app/modules/_products.scss */
 .bc-recentProduct {
   margin-bottom: 0.625em;
 }
