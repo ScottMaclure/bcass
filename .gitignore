@@ -12,3 +12,7 @@ compiled/
 
 # Exclude NPM packages from source control
 node_modules
+
+# Grunt Jasmine
+.grunt
+_SpecRunner.html
