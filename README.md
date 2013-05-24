@@ -18,7 +18,7 @@ We are expecting that your code will be ‘production like’, so take care.
 
 Browser support: IE7+, latest Firefox, Chrome and Safari
 
-## Core Techuc
+## Core Tech
 
 * Foundation v4: this allows me to get up and running very quickly with a grid and some decent css, rather than hand-crafting everything from scratch. A few JS modules that come in handy as well. I'd customise this later.
 * Node.js, Express: Server-side tech for rendering. Basic server-app, to be replaced later for real.
@@ -75,13 +75,19 @@ To minify/compress for production:
 
 ## Deployment
 
+To run locally:
+
+`npm start`
+
+(Windows users view package.json, copy start comment, swap slashes, run from project dir)
+
 QnD way of re-deploying the app on a server:
 
 `./deploy.sh`
 
 * Pulls (ff) the latest from git
-* Runs Grunt
-* Restarts node app using forever
+* Runs Grunt prod
+* Stops + starts node app using forever
 
 ## Fire it up!
 
