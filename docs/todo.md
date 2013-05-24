@@ -2,7 +2,6 @@
 
 ## Sooner
 
-* Setup Jasmine spec runner for app .js
 * Add Sinon to the grunt task for mocking XHR
 * Write some custom JS (perhaps an ajax search?). Design via Jasmine suite
 * Update package.json dependencies to use specific versions, to prevent updates breaking deployment
@@ -21,11 +20,13 @@
 * Image magnifier plugin?
 * Touch-friendly carousel?
 * Fix deprecated use of end (use done) - see node.js server log
+* Pretty/custom fonts using google fonts?
 
 ## Done
 
 ### 2013-05-23
 
+* Setup Jasmine spec runner for app .js
 * Refactor app scss into file/folder structure (sass-globbing?)
 * Added sass-globbing: So you can do @import "library/**/*"
 
