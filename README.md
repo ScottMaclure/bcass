@@ -32,6 +32,14 @@ Browser support: IE7+, latest Firefox, Chrome and Safari
 
 ## Installation
 
+### Prereqs
+
+* Git
+* Node.js
+* Ruby
+
+### Get the code
+
 Setup the project via `git clone`.
 
 ### Ruby Gems
@@ -41,6 +49,14 @@ Setup the project via `git clone`.
 ```
 
 Note: May remove some of these dependencies later.
+
+### Node Modules
+
+`npm install`
+
+Also, install grunt-cli globally, so you can use whatever version of grunt is in the project by default:
+
+`[sudo] npm install -g grunt-cli`
 
 ### Apache vhost
 
