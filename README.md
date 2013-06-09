@@ -2,7 +2,7 @@
 
 The following project is my submission for the BC FE assignment.
 
-See [docs/todo.md](https://github.com/ScottMaclure/bcass/blob/master/docs/todo.md) for a todo list.
+See docs/todo.md for a todo list.
 
 ## Assignment
 
@@ -18,10 +18,10 @@ We are expecting that your code will be ‘production like’, so take care.
 
 Browser support: IE7+, latest Firefox, Chrome and Safari
 
-## Core Techuc
+## Core Technical Choices
 
 * Foundation v4: this allows me to get up and running very quickly with a grid and some decent css, rather than hand-crafting everything from scratch. A few JS modules that come in handy as well. I'd customise this later.
-* Node.js, Express: Server-side tech for rendering. Basic server-app, to be replaced later for real.
+* Node.js, Express: Server-side tech for rendering. Basic server-app, to be replaced later with some established framework, like Sails.js.
 * Git: The VCS of choice.
 * Grunt: For automating tasks like minification etc. Very useful swiss-army knife. Moar Node!
 
@@ -32,7 +32,24 @@ Browser support: IE7+, latest Firefox, Chrome and Safari
 
 ## Installation
 
-Setup the project via `git clone`.
+Setup the project `git clone git@github.com:ScottMaclure/bcass.git`.
+
+Note: May be renamed to something more generic later.
+
+### Recommended git config
+
+Make sure you have your name + email set:
+`user.email=you@email.com`
+`user.name=Your Name`
+
+Don't do fast-forward merges, means my standard update is: git pull --ff -r (or git fetch && git rebase)
+`merge.ff=false`
+
+Only push the current branch:
+`push.default=simple`
+
+Normalise to LF when committing:
+`core.autocrlf=input`
 
 ### Ruby Gems
 
@@ -40,7 +57,9 @@ Setup the project via `git clone`.
 [sudo] gem install sass compass zurb-foundation sass-globbing
 ```
 
-Note: May remove some of these dependencies later.
+Note: May remove some of these dependencies later, for example just dropping zurb's sass directly into the project. At this point, ruby will remain a dependency due to sass.
+
+Windows users: you may need to install ruby devkit to install native implementations of gems. Else you may end up with different output.
 
 ### Apache vhost
 
@@ -48,11 +67,11 @@ If you want to run it through port 80, use apache as a reverse-proxy:
 
 ```
 <VirtualHost *:80>
-    DocumentRoot "/home/scottm/dev/projects/bcass/public"
+    DocumentRoot "/path/to/bcass/public"
     ServerName bcass.local
     ServerAdmin scott@maclure.com.au
     SetEnv APPLICATION_ENV "development"
-    <Directory /home/scottm/dev/projects/bcass/public>
+    <Directory /path/to/bcass/public>
         DirectoryIndex index.html
         AllowOverride All
         Order allow,deny
@@ -61,11 +80,13 @@ If you want to run it through port 80, use apache as a reverse-proxy:
 </VirtualHost>
 ```
 
-Don't forget to add an entry to `/etc/hosts`.
+Don't forget to add an entry to `/etc/hosts`:
+
+`127.0.0.1 bcass.local`
 
 ## Grunt
 
-To build css and js, and finish in "watch" mode:
+To build css and js in "dev mode" (typically uncompressed css, with line comments), and finish in "watch" mode:
 
 `grunt dev`
 
