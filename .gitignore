@@ -10,5 +10,8 @@
 # Exclude compiled JS from source control
 compiled/
 
+# Exclude compiled css
+public/stylesheets/*.css
+
 # Exclude NPM packages from source control
 node_modules
