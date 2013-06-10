@@ -61,6 +61,11 @@ module.exports = function (grunt) {
                 }
             },
             prod: {
+                options: {
+                    compress: true,
+                    preserveComments: false,
+                    mangle: true
+                },
                 files: {
                     'public/javascripts/compiled/foundation.min.js': manifests.js.foundation
                 }
