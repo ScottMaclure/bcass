@@ -1,6 +1,10 @@
-# BC - Senior FE Assignment
+# Senior FE Assignment
 
-The following project is my submission for the BC FE assignment.
+## Overview
+
+The following repo is an implementation of a Senior Frontend Engineer assignment.
+
+See docs/install.md for instructions on getting everything set up.
 
 See docs/todo.md for a todo list.
 
@@ -27,9 +31,5 @@ Browser support: IE7+, latest Firefox, Chrome and Safari
 
 ## Other choices and notes
 
-* Compass: What Foundation uses for compiling its SCSS.
+* Compass: What Foundation uses for compiling its SCSS. Useful utilities like sprite generation.
 * Zepto, with jQuery fallback for IE. Since conditional comments are not supported in IE10, we use document.write instead. This is a Foundation4 decision. Still need to research this in terms of IE7 support for Foundation v4.
-
-## Installation and running
-
-See docs/install.md for instructions on getting everything set up.
