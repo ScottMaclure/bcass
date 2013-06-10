@@ -2,8 +2,9 @@
 
 ## Sooner
 
-* Setup Jasmine spec runner for application's JS
-* Write some custom JS (perhaps an ajax search?). Design via md doc. Backbone? Angular?
+* searchFeature: Update branch from master (going to be conflicts...)
+* searchFeature: Setup Jasmine spec runner for application's JS
+* searchFeature: Write some custom JS (perhaps an ajax search?). Design via md doc. Backbone? Angular?
 
 ## Later
 

@@ -10,6 +10,12 @@ A: ???
 
 ## On Win7
 
-ab -n 1000 -c 5 http://localhost:3000/javascripts/vendor/custom.modernizr.js
+Apache:
+```
+ab -n 1000 -c 5 http://fetest.local/stylesheets/app.css
+```
 
-ab -n 1000 -c 5 http://fetest.local/javascripts/vendor/custom.modernizr.js
+Node:
+```
+ab -n 1000 -c 5 http://localhost:3000/stylesheets/app.css
+```
