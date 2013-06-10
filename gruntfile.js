@@ -16,6 +16,13 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-jasmine');
 
+    // Convenience variable
+    var allJs = [].concat(
+        'Gruntfile.js',
+        manifests.js.specs,
+        manifests.js.app
+    );
+
     // App grunt config
     grunt.initConfig({
 
@@ -23,7 +30,7 @@ module.exports = function (grunt) {
         // @see http://www.jshint.com/docs/
         jshint: {
             all: {
-                src: [ 'Gruntfile.js' ],
+                src: allJs,
                 options: {
                     bitwise: true,
                     camelcase: true,
@@ -59,7 +66,8 @@ module.exports = function (grunt) {
                     beautify: true
                 },
                 files: {
-                    'public/javascripts/compiled/foundation.min.js': manifests.js.foundation
+                    'public/javascripts/compiled/foundation.min.js': manifests.js.foundation,
+                    'public/javascripts/compiled/app.min.js': manifests.js.app
                 }
             },
             prod: {
@@ -69,7 +77,8 @@ module.exports = function (grunt) {
                     mangle: true
                 },
                 files: {
-                    'public/javascripts/compiled/foundation.min.js': manifests.js.foundation
+                    'public/javascripts/compiled/foundation.min.js': manifests.js.foundation,
+                    'public/javascripts/compiled/app.min.js': manifests.js.app
                 }
             }
         },
@@ -98,7 +107,7 @@ module.exports = function (grunt) {
             }
         },
 
-		// HTTP server
+		// HTTP server for test suite
 		connect: {
 			jasmine: {
 				options: {
@@ -124,12 +133,18 @@ module.exports = function (grunt) {
         // Watch filesystem for changes and run relevant tasks.
         watch: {
             uglify: {
-                files: manifests.js.foundation,
-                tasks: [ 'uglify:dev' ]
+                files: allJs,
+                tasks: [ 'uglify:dev' ],
+                options: {
+                    debounceDelay: 250
+                }
             },
             compass: {
                 files: 'sass/**/*.scss',
-                tasks: [ 'compass:dev' ]
+                tasks: [ 'compass:dev' ],
+                options: {
+                    debounceDelay: 250
+                }
             }
         }
 
