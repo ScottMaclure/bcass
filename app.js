@@ -1,8 +1,8 @@
 /**
- * BCASS server, using express (and connect).
+ * node/express/connect server for feTest.
  */
 
-console.log("Running BCASS app.js at " + __dirname);
+console.log("Running feTest app.js at " + __dirname);
 
 var express = require('express'),
 	http = require('http'),
@@ -13,7 +13,7 @@ var express = require('express'),
 // Configure express server
 app.configure(function () {
 
-	app.set('port', process.env.PORT || 3000);
+    app.set('port', process.env.PORT || 3000);
 
 	// Configure QEJS as the view templating.
 	app.engine('html', engines.qejs);

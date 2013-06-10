@@ -1,6 +1,6 @@
 # Installation
 
-Setup the project `git clone git@github.com:ScottMaclure/bcass.git`.
+Setup the project `git clone git@github.com:ScottMaclure/feTest.git`.
 
 Note: May be renamed to something more generic later.
 
@@ -45,14 +45,14 @@ And the vhost config:
 ```
 <VirtualHost *:80>
 
-    DocumentRoot "/path/to/bcass/public"
-    ServerName bcass.local
+    DocumentRoot "/path/to/feTest/public"
+    ServerName feTest.local
     ServerAdmin scott@maclure.com.au
 
     # For future use. Define the "mode" the app will run in on this server.
     SetEnv APPLICATION_ENV "development"
 
-    <Directory /path/to/bcass/public>
+    <Directory /path/to/feTest/public>
         DirectoryIndex index.html
         AllowOverride All
         Order allow,deny
@@ -79,7 +79,7 @@ And the vhost config:
 
 Don't forget to add an entry to `/etc/hosts`:
 
-`127.0.0.1 bcass.local`
+`127.0.0.1 feTest.local`
 
 To test if your request is being served by apache only, or node, check the response header for:
 
@@ -115,4 +115,4 @@ http://localhost:3000/
 
 Or through apache:
 
-http://bcass.local/
+http://fetest.local/

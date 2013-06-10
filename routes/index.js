@@ -3,7 +3,7 @@
  */
 
 var utils = require('../services/Utils.js');
-var productService = require('../services/ProductService.js');
+var storeService = require('../services/StoreService.js');
 
 /**
  * Main index page for the site.
@@ -14,9 +14,10 @@ var productService = require('../services/ProductService.js');
 exports.index = function (req, res) {
 	res.render('index.html', {
 		utils: utils,
-		featuredProducts: productService.getFeaturedProducts(10),
-		productCategories: productService.getPopularCategories(),
-		recentProducts: productService.getRecentProducts(3)
+		featuredProducts: storeService.getFeaturedProducts(10),
+		productCategories: storeService.getPopularCategories(),
+		recentProducts: storeService.getRecentProducts(3),
+        storeDetails: storeService.getStoreDetails()
 	});
 };
 

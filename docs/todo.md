@@ -1,4 +1,4 @@
-# BCASS Todo
+# feTest Todo
 
 ## Sooner
 
@@ -21,7 +21,7 @@
 
 ### 2013-06-10 (and before)
 
-* Rename repo from bcass to feTest (generic, same as Paz)
+* Rename repo from feTest to feTest (generic, same as Paz)
 * Refactor app scss into file/folder structure (sass-globbing?)
 * Aborted: remove dependency on zurb-foundation gem, add foundation sass directly to project (consider upgrade path though. Temptation to tweak foundation itself?)
 * Already done: sass-globbing: So you can do @import "library/**/*"
