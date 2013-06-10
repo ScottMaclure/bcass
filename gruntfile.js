@@ -63,35 +63,40 @@ module.exports = function (grunt) {
                 }
             },
             prod: {
+                options: {
+                    compress: true,
+                    preserveComments: false,
+                    mangle: true
+                },
                 files: {
                     'public/javascripts/compiled/foundation.min.js': manifests.js.foundation
                 }
             }
         },
 
-		// SASS generation using Compass. Gives us tools like sprite generation.
-		compass: {
-			options: {
-				sassDir: 'sass',
-				cssDir: 'public/stylesheets',
-				imagesDir: 'public/images',
-				// For correct sprite css generation (for later)
-				raw: 'http_images_path = \'/images\' \nhttp_generated_images_path = \'/images\'',
-				require: [ 'zurb-foundation', 'sass-globbing' ]
-			},
-			dev: {
-				 options: {
-					outputStyle: 'expanded'
-				 }
-			},
-			prod: {
-				options: {
-					force: true,
-					outputStyle: 'compressed',
-					noLineComments: true
-				}
-			}
-		},
+        // SASS generation using Compass. Gives us tools like sprite generation.
+        compass: {
+            options: {
+                sassDir: 'sass',
+                cssDir: 'public/stylesheets',
+                imagesDir: 'public/images',
+                // For correct sprite css generation (for later)
+                raw: 'http_images_path = \'/images\' \nhttp_generated_images_path = \'/images\'',
+                require: [ 'zurb-foundation', 'sass-globbing' ]
+            },
+            dev: {
+                options: {
+                    outputStyle: 'expanded'
+                }
+            },
+            prod: {
+                options: {
+                    force: true,
+                    outputStyle: 'compressed',
+                    noLineComments: true
+                }
+            }
+        },
 
 		// HTTP server
 		connect: {
@@ -122,10 +127,10 @@ module.exports = function (grunt) {
                 files: manifests.js.foundation,
                 tasks: [ 'uglify:dev' ]
             },
-			compass: {
-				files: 'sass/**/*.scss',
-				tasks: [ 'compass:dev' ]
-			}
+            compass: {
+                files: 'sass/**/*.scss',
+                tasks: [ 'compass:dev' ]
+            }
         }
 
     });
@@ -135,4 +140,4 @@ module.exports = function (grunt) {
 	grunt.registerTask('test', ['jshint', 'connect', 'jasmine']);
     grunt.registerTask('deploy', ['jshint', 'uglify:prod', 'compass:prod']);
 
-}
+};

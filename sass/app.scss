@@ -12,3 +12,11 @@
 @import "app/mixins/**/*";
 @import "app/base/**/*";
 @import "app/modules/**/*";
+
+// FIXME 10Jun13: I
+.displayRow {
+    @extend .row;
+    @include desktop {
+        margin-bottom: emCalc(10px);
+    }
+}

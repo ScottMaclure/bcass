@@ -1,34 +1,32 @@
-# BCASS TO DO
+# feTest Todo
 
 ## Sooner
 
-* Add Sinon to the grunt task for mocking XHR
-* Write some custom JS (perhaps an ajax search?). Design via Jasmine suite
-* Update package.json dependencies to use specific versions, to prevent updates breaking deployment
+* searchFeature: Update branch from master (going to be conflicts...)
+* searchFeature: Setup Jasmine spec runner for application's JS
+* searchFeature: Write some custom JS (perhaps an ajax search?). Design via md doc. Backbone? Angular?
 
 ## Later
 
-* JS code coverage report with istanbul
-* IE7 testing and support strategy (need to get VM XP serial/activation first)
+* Fix deprecated use of end (use done) - see node.js server log
 * Implement a "stars" rating display. Sprite?
-* Model layer for things like products? Generating image elements?
-* Consider: remove dependency on zurb-foundation gem, add foundation sass directly to project (consider upgrade path though. Temptation to tweak foundation itself?)
-* HTML utility library for links etc
-* Image service? Generating image tags?
-* Review/address issue with Uglify and Zepto (1.2.6 lock?)
+* IE7 testing and support strategy (need to get VM XP serial/activation first)
+* HTML utility library for links etc (or switch to a framework)
+* Image service? Generating image tags? (or mock)
+* Model layer for things like products? Generating image elements? (framework)
 * Replace navbar with data structure
 * Image magnifier plugin?
 * Touch-friendly carousel?
-* Fix deprecated use of end (use done) - see node.js server log
-* Pretty/custom fonts using google fonts?
 
 ## Done
 
-### 2013-05-23
+### 2013-06-10 (and before)
 
-* Setup Jasmine spec runner for app .js
+* Rename repo from feTest to feTest (generic, same as Paz)
 * Refactor app scss into file/folder structure (sass-globbing?)
-* Added sass-globbing: So you can do @import "library/**/*"
+* Aborted: remove dependency on zurb-foundation gem, add foundation sass directly to project (consider upgrade path though. Temptation to tweak foundation itself?)
+* Already done: sass-globbing: So you can do @import "library/**/*"
+* Review/address issue with Uglify and Zepto (1.2.6 lock?) (Moved precompiled version to vendor folder, leaving alone.)
 
 ### 2013-05-22
 

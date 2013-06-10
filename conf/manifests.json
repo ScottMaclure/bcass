@@ -1,6 +1,6 @@
 {
     "_comments": [
-        "Manifests file for bcass. Initially for JS concat/minifcation."
+        "Manifests file for feTest. Initially for JS concat/minifcation."
     ],
 
     "js": {
