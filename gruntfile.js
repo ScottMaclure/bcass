@@ -12,7 +12,16 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-compass');
+	grunt.loadNpmTasks('grunt-contrib-compass');
+	grunt.loadNpmTasks('grunt-contrib-connect');
+	grunt.loadNpmTasks('grunt-contrib-jasmine');
+
+    // Convenience variable
+    var allJs = [].concat(
+        'Gruntfile.js',
+        manifests.js.specs,
+        manifests.js.app
+    );
 
     // App grunt config
     grunt.initConfig({
@@ -21,7 +30,7 @@ module.exports = function (grunt) {
         // @see http://www.jshint.com/docs/
         jshint: {
             all: {
-                src: [ 'Gruntfile.js' ],
+                src: allJs,
                 options: {
                     bitwise: true,
                     camelcase: true,
@@ -57,7 +66,8 @@ module.exports = function (grunt) {
                     beautify: true
                 },
                 files: {
-                    'public/javascripts/compiled/foundation.min.js': manifests.js.foundation
+                    'public/javascripts/compiled/foundation.min.js': manifests.js.foundation,
+                    'public/javascripts/compiled/app.min.js': manifests.js.app
                 }
             },
             prod: {
@@ -67,7 +77,8 @@ module.exports = function (grunt) {
                     mangle: true
                 },
                 files: {
-                    'public/javascripts/compiled/foundation.min.js': manifests.js.foundation
+                    'public/javascripts/compiled/foundation.min.js': manifests.js.foundation,
+                    'public/javascripts/compiled/app.min.js': manifests.js.app
                 }
             }
         },
@@ -96,15 +107,44 @@ module.exports = function (grunt) {
             }
         },
 
+		// HTTP server for test suite
+		connect: {
+			jasmine: {
+				options: {
+					hostname: 'localhost',
+					// It's over nine-thousand!!!
+					port: 9001
+				}
+			}
+		},
+
+		// BDD suite
+		jasmine: {
+			all : {
+				src: manifests.js.app,
+				options: {
+					vendor: manifests.js.jasmineVendor,
+					specs: manifests.js.specs,
+					host: 'http://localhost:9001/'
+				}
+			}
+		},
+
         // Watch filesystem for changes and run relevant tasks.
         watch: {
             uglify: {
-                files: manifests.js.foundation,
-                tasks: [ 'uglify:dev' ]
+                files: allJs,
+                tasks: [ 'uglify:dev' ],
+                options: {
+                    debounceDelay: 250
+                }
             },
             compass: {
                 files: 'sass/**/*.scss',
-                tasks: [ 'compass:dev' ]
+                tasks: [ 'compass:dev' ],
+                options: {
+                    debounceDelay: 250
+                }
             }
         }
 
@@ -112,6 +152,7 @@ module.exports = function (grunt) {
 
     // Define task aliases
     grunt.registerTask('dev', ['jshint', 'uglify:dev', 'compass:dev', 'watch']);
+	grunt.registerTask('test', ['jshint', 'connect', 'jasmine']);
     grunt.registerTask('deploy', ['jshint', 'uglify:prod', 'compass:prod']);
 
 };
